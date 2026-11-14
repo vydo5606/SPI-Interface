@@ -1,0 +1,45 @@
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	xmverilog	17.10-s001: Started on Nov 13, 2026 at 21:12:56 EST
+xmverilog
+	../testbench/SPI_interface_tb.v
+	+gui
+	+access+r
+	-timescale
+	1ns/1ps
+Recompiling... reason: file '../testbench/SPI_interface_tb.v' is newer than expected.
+	expected: Fri Nov 13 20:53:20 2026
+	actual:   Fri Nov 13 21:12:47 2026
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SPI_interface_tb:v <0x6f858b00>
+			streams:  12, words: 17760
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:              28      28
+		Scalar wires:            8       -
+		Vectored wires:          3       -
+		Always blocks:           5       5
+		Initial blocks:          6       6
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.SPI_interface_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /apps/vlsi_2018/cadence/XCELIUM1710/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm SPI_interface_tb.CSN SPI_interface_tb.MISO SPI_interface_tb.MISO_enable SPI_interface_tb.MOSI SPI_interface_tb.SCLK SPI_interface_tb.SPI_data_out SPI_interface_tb.error_count SPI_interface_tb.i SPI_interface_tb.mem_addr SPI_interface_tb.mem_read_data SPI_interface_tb.mem_read_req SPI_interface_tb.mem_write_data SPI_interface_tb.mem_write_req SPI_interface_tb.rst_n SPI_interface_tb.spi_data SPI_interface_tb.tb_clk SPI_interface_tb.test_memory SPI_interface_tb.testcase
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 41435 US + 0
+../testbench/SPI_interface_tb.v:114        $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmverilog	17.10-s001: Exiting on Nov 13, 2026 at 21:21:49 EST  (total: 00:08:53)
