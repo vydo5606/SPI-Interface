@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Post-synthesis netlist and SRAM model for Project 8
+ver_files=("../../synthesis/netlists/proj8_top.v"
+           "../../macros/gf180mcu_fd_ip_sram__sram64x8m8wm1/gf180mcu_fd_ip_sram__sram64x8m8wm1.v")

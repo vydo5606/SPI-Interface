@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# RTL design files for Project 8
+ver_files=("../../source/reset_sync.v"
+           "../../source/reset_sequencer.v"
+           "../../source/SPI_interface.v"
+           "../../source/spi_mem_cdc.v"
+           "../../source/memory_controller.v"
+           "../../source/sram_test.v"
+           "../../source/proj8_top.v"
+           "../../macros/gf180mcu_fd_ip_sram__sram64x8m8wm1/gf180mcu_fd_ip_sram__sram64x8m8wm1.v")

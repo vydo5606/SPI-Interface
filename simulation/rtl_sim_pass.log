@@ -1,0 +1,141 @@
+
+Xcelcium Simulation Control File
+~/ECE6213_Project8/project8/simulation/work ~/ECE6213_Project8/project8/simulation
+   Compiling files listed in design_files
+   Compiling ../../source/reset_sync.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Compiling ../../source/reset_sequencer.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Compiling ../../source/SPI_interface.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Compiling ../../source/spi_mem_cdc.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Compiling ../../source/memory_controller.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Compiling ../../source/sram_test.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Compiling ../../source/proj8_top.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Compiling ../../macros/gf180mcu_fd_ip_sram__sram64x8m8wm1/gf180mcu_fd_ip_sram__sram64x8m8wm1.v
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+   Launching Simulation
+xmverilog(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+file: ../testbench/proj8_top_tb.v
+	module worklib.proj8_top_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.gf180mcu_fd_ip_sram__sram64x8m8wm1:v <0x2282f92f>
+			streams:  33, words: 28867
+		worklib.sram_test:v <0x43d75363>
+			streams:   2, words:   365
+		worklib.memory_controller:v <0x03c801e0>
+			streams:  10, words:  4533
+		worklib.spi_mem_cdc:v <0x3e3b0401>
+			streams:  19, words:  6427
+		worklib.SPI_interface:v <0x67e3e269>
+			streams:  16, words:  6096
+		worklib.reset_sync:v <0x5978ad91>
+			streams:   3, words:   581
+		worklib.reset_sync:v <0x14c0da9e>
+			streams:   3, words:   581
+		worklib.reset_sequencer:v <0x16f7efba>
+			streams:   0, words:     0
+		worklib.proj8_top_tb:v <0x046b1aa1>
+			streams:  12, words: 25696
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                10       9
+		Timing outputs:          8       8
+		Registers:              79      78
+		Scalar wires:           34       -
+		Expanded wires:         30       4
+		Vectored wires:         14       -
+		Always blocks:          27      26
+		Initial blocks:          9       9
+		Cont. assignments:      17      19
+		Pseudo assignments:      3       3
+		Timing checks:          99      20
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.proj8_top_tb:v
+Loading snapshot worklib.proj8_top_tb:v .................... Done
+xcelium> source /apps/vlsi_2018/cadence/XCELIUM1710/tools/xcelium/files/xmsimrc
+xcelium> run
+-------- MESSAGE: CEN is just reset, memory is operational ---------
+-------- @Time 315263514: scope = proj8_top_tb.DUT.mem_ctrl.memory.i_sram ---------
+PASS addr=00 data=24
+PASS addr=01 data=81
+PASS addr=02 data=09
+PASS addr=03 data=63
+PASS addr=04 data=0d
+PASS addr=05 data=8d
+PASS addr=06 data=65
+PASS addr=07 data=12
+PASS addr=08 data=01
+PASS addr=09 data=0d
+PASS addr=10 data=76
+PASS addr=11 data=3d
+PASS addr=12 data=ed
+PASS addr=13 data=8c
+PASS addr=14 data=f9
+PASS addr=15 data=c6
+PASS addr=16 data=c5
+PASS addr=17 data=aa
+PASS addr=18 data=e5
+PASS addr=19 data=77
+PASS addr=20 data=12
+PASS addr=21 data=8f
+PASS addr=22 data=f2
+PASS addr=23 data=ce
+PASS addr=24 data=e8
+PASS addr=25 data=c5
+PASS addr=26 data=5c
+PASS addr=27 data=bd
+PASS addr=28 data=2d
+PASS addr=29 data=65
+PASS addr=30 data=63
+PASS addr=31 data=0a
+PASS addr=32 data=80
+PASS addr=33 data=20
+PASS addr=34 data=aa
+PASS addr=35 data=9d
+PASS addr=36 data=96
+PASS addr=37 data=13
+PASS addr=38 data=0d
+PASS addr=39 data=53
+PASS addr=40 data=6b
+PASS addr=41 data=d5
+PASS addr=42 data=02
+PASS addr=43 data=ae
+PASS addr=44 data=1d
+PASS addr=45 data=cf
+PASS addr=46 data=23
+PASS addr=47 data=0a
+PASS addr=48 data=ca
+PASS addr=49 data=3c
+PASS addr=50 data=f2
+PASS addr=51 data=8a
+PASS addr=52 data=41
+PASS addr=53 data=d8
+PASS addr=54 data=78
+PASS addr=55 data=89
+PASS addr=56 data=eb
+PASS addr=57 data=b6
+PASS addr=58 data=c6
+PASS addr=59 data=ae
+PASS addr=60 data=bc
+PASS addr=61 data=2a
+PASS addr=62 data=0b
+PASS addr=63 data=71
+----------SIMULATION PASSED----------
+----------64/64 ADDRESSES  ----------
+----------RTL SIMULATION----------
+Simulation complete via $finish(1) at time 41215 US + 0
+../testbench/proj8_top_tb.v:107         $finish;
+xcelium> exit
+~/ECE6213_Project8/project8/simulation
